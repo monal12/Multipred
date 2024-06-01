@@ -1,0 +1,101 @@
+.bg{
+    background-color: rgb(122, 182, 223);
+    /* height: 100dvh; */
+    height: 990px;
+}
+.img{
+    height: 100vh;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
+.img2{
+    width: 50vw;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
+.heading{
+    font-family: 'Young Serif', serif;
+}
+hr {
+    width: 25%;
+    border-style: inset;
+    border-width: 1px;
+}
+.main{
+    background-color: lightblue;
+}
+  
+.carousel {
+    width:800px;
+    height:500px;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .details{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+ 
+.Box {
+    padding: 2.5% 2.5%;
+    background: lightblue;
+    bottom: 0;
+    width: 100%;
+}
+ 
+ 
+.FooterContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* background: red; */
+}
+ 
+.Column {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 60px;
+}
+ 
+.Row{
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(185px, 1fr)
+    );
+    grid-gap: 20px;
+ 
+    @media (max-width: 1000px) {
+        grid-template-columns: repeat(
+            auto-fill,
+            minmax(200px, 1fr)
+        );
+    }
+}
+ 
+.FooterLink {
+    color: #130505;
+    margin-bottom: 20px;
+    font-size: 12px;
+    text-decoration: none;
+ 
+    &:hover {
+        color: blue;
+        transition: 200ms ease-in;
+    }
+}
+ 
+.Heading{
+    font-size: 15px;
+    color: #141313;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
